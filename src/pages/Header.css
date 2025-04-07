@@ -1,0 +1,62 @@
+.headerContainer {
+  width: 100%;
+  height: 100px;
+  background: #ead6be;
+  position: fixed;
+}
+.headerCenter {
+  width: 83.33%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerCenter h1 {
+  font-size: 2.6rem;
+}
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-right: 30px;
+  margin-left: auto;
+}
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+}
+.close {
+  font-size: 3rem;
+}
+.gnbWrap {
+  width: 100%;
+  font-size: 2rem;
+
+  background-color: burlywood;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+.gnbWrap.show {
+  max-height: 230px;
+  opacity: 1;
+  visibility: visible;
+}
+.gnb {
+  width: 83.33%;
+  height: auto;
+  margin: 0 auto;
+}
+.gnb li {
+  padding: 30px 30px 0 0;
+}
+.gnb li:last-child {
+  padding-bottom: 30px;
+}
