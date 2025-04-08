@@ -1,10 +1,11 @@
+import "./Contact.css";
 function Contact() {
   return (
-    <div>
+    <section className="contactSection">
+      <div className="sectionTitle">
+        <h2>03 컨택트</h2>
+      </div>
       <div className="contactContainer">
-        <div className="sectionTitle">
-          <h2>03 컨택트</h2>
-        </div>
         <div className="contactContents">
           <div className="contactThank">
             <p>저의 포트폴리오를 끝까지 읽어주셔서 감사합니다</p>
@@ -18,18 +19,18 @@ function Contact() {
           </div>
         </div>
         <div className="contactEmail">
-          <span>이메일 & 연락처</span>
+          <p>이메일 & 연락처</p>
           <div className="emailPhone">
             <div className="email">
-              <p>jsjssj@jsjsjss</p>
+              <p>이메일: jsjssj@jsjsjss</p>
             </div>
             <div className="phone">
-              <p>01000000000</p>
+              <p>연락처: 01000000000</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 export default Contact;

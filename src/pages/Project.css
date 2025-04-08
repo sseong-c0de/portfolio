@@ -1,7 +1,7 @@
 @charset "utf-8";
 .projectSection{
   width: 100%;;
-  margin-top: 100px;
+  margin-top: 50px;
   background: #EBD8C3;
 }
 .projectContainer{
@@ -31,9 +31,94 @@
 .scrollBox{
   width: 100%;
   height: 90px;
+  line-height: 90px;
   text-align: center;
-  padding-top:25px;
   background: #fff;
   font-size:2.4rem;
-  border: 1px solid #000;
+  border-radius: 30px;
+}
+.projectBox{
+  width: 100%;
+  /* background: #fff; */
+  margin-top: 25px;
+}
+.projectImg{
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+.projectDescription{
+  width: 100%;
+  height: 425px;
+  background: #fff;
+  border-radius: 30px;
+  color:#4B3F33;
+}
+.projectTitle{
+  width: 100%;
+  height: 145px;
+  /* background: yellow; */
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.projectTitle h3{
+  font-size: 4rem;
+}
+.projectTitle p {
+  padding:10px 0 0 10px;
+}
+.projectTitle p:nth-of-type(1){
+  font-size: 2rem;
+}
+.projectTitle p:nth-of-type(2){
+  font-size: 1.6rem;
+}
+.line{
+  margin-top: 20px;
+  width: 100%;
+  height: 2px;
+  background: #000;
+}
+.projectDetailBox{
+  width: 100%;
+  height: 340px;
+  /* background: greenyellow; */
+}
+.detailRow{
+  display: flex;
+  justify-content: space-between;
+  padding:0 10px 0 10px;
+  height: 70px;
+  line-height: 70px;
+  border-bottom: 1px solid #000;
+}
+.detailRow:last-child{
+  border-bottom: none;
+}
+.label{
+  font-size: 2.4rem;
+}
+.contents{
+  font-size: 1.6rem;
+}
+.projectPageBtn{
+  margin-top: 30px;
+  padding-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.projectPageBtn button{
+  width: 145px;
+  height: 50px;
+  font-size: 2.4rem;
+  border-radius: 30px;
+  color: #fff;
+  background: #A67C52;
+}
+.projectPageBtn button:hover{
+  background: #7E583A;
 }

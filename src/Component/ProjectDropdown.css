@@ -9,14 +9,29 @@
   background: #a67c52;
   border-radius: 50px;
   font-size:1.8rem;
-  border-bottom: 1px solid #000;
 }
 .dropDownMenu{
   width: 100%;
   margin:0 auto;
   font-size:1.8rem;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.dropDownMenu.show{
+  max-height: 300px;
+  opacity: 1;
+  
 }
 .dropDownMenu li{
   background: burlywood;
-  padding:10px 0 10px 0;
+  padding:15px 0 15px 0;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  color:#3f2712;
+  cursor: pointer;
+}
+.dropDownMenu li:first-child{
+  margin-top: 20px;
 }

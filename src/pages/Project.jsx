@@ -1,5 +1,6 @@
 import ProjectDropDown from "../Component/ProjectDropdown";
 import ProjectBtn from "../Component/ProjectBtn";
+import ProjectData from "../Data/ProjectData";
 import "./Project.css";
 
 function Project() {
@@ -30,10 +31,11 @@ function Project() {
               <img></img>
             </div>
             <div className="projectDescription">
-              <div className="projectTtile">
-                <h3>carhartt 데이터 꺼내오기</h3>
-                <p>칼하트 데이터 꺼내오기</p>
-                <p>설명 데이터 꺼내오기</p>
+              <div className="projectTitle">
+                <h3>carhartt</h3>
+                <p>칼하트</p>
+                <p>선호하는 의류 브랜드사이트를 리뉴얼해서 만들었습니다</p>
+                <div className="line"></div>
               </div>
               <div className="projectDetailBox">
                 <div className="detailRow">
@@ -47,18 +49,18 @@ function Project() {
                   <span className="contents">데이터꺼내오기</span>
                 </div>
                 <div className="detailRow">
-                  <span className="label">활용 프로그램</span>
+                  <span className="label">프로그램</span>
                   <span className="contents">데이터꺼내오기</span>
                 </div>
                 <div className="detailRow">
-                  <span className="label">활용 라이브러리</span>
+                  <span className="label">라이브러리</span>
                   <span className="contents">데이터꺼내오기</span>
                 </div>
               </div>
             </div>
             <div className="projectPageBtn">
-              <button className="">홈페이지</button>
-              <button className="">디자인</button>
+              <button className="homePage">홈페이지</button>
+              <button className="design">디자인</button>
             </div>
           </div>
         </div>
