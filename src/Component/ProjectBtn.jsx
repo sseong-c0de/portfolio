@@ -1,6 +1,6 @@
 function ProjectBtn() {
   return (
-    <div>
+    <div className="onlyDesktop">
       <div className="ProjectBtnContainer">
         <button>칼하트</button>
         <button>테슬라</button>

@@ -1,0 +1,24 @@
+@charset "utf-8";
+h3{
+  font-size:2.4rem;
+  padding:10px 0 0 10px;
+}
+.detailBox{
+  font-size:1.6rem;
+  padding:0 10px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.skillBox{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.skillicon{
+  width: 25px;
+  height: 25px;
+  margin-right: 3px;
+  display: inline-block;
+  border:1px solid #000;
+}

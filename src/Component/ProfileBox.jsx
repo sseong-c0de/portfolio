@@ -1,3 +1,4 @@
+import "./ProfileBox.css";
 function ProfileBox({ title, children }) {
   return (
     <div>

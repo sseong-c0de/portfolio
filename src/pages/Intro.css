@@ -1,19 +1,20 @@
-.IntroContainer {
+@charset "utf-8";
+.introBg {
   background-color: #f7e9dc;
-  height: 500px;
+  height: 600px;
   width: 100%;
 }
-.IntroText {
+.introText {
   width: 46.11%;
   height: 83px;
   margin: 0 auto;
 }
 
-.IntroText p {
+.introText p {
   font-size: 3.6rem;
   text-align: center;
 }
-.IntroText p:first-child {
-  padding-top: 200px;
+.introText p:first-child {
+  padding-top: 250px;
   margin-bottom: 20px;
 }

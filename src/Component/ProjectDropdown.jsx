@@ -1,12 +1,13 @@
+import "./ProjectDropdown.css";
 import { useState } from "react";
 
 function ProjectDropDown() {
   const [open, setOpen] = useState(false);
   return (
-    <div>
-      <div className="DropDown">
+    <div className="onlyMobile">
+      <div className="dropDown">
         <button
-          className="dropDownToggle"
+          className="dropDownUl"
           onClick={() => {
             setOpen(!open);
           }}
@@ -14,7 +15,7 @@ function ProjectDropDown() {
           프로젝트들
         </button>
         {open && (
-          <ul className="dropdownMenu">
+          <ul className="dropDownMenu">
             <li>칼하트</li>
             <li>테슬라</li>
             <li>투두리스트앱</li>

@@ -1,14 +1,16 @@
 import "./Intro.css";
 function Intro() {
   return (
-    <div>
-      <div className="IntroContainer">
-        <div className="IntroText">
-          <p>이재성의</p>
-          <p>포트폴리오</p>
+    <section className="introSection">
+      <div className="introContainer">
+        <div className="introBg">
+          <div className="introText">
+            <p>이재성의</p>
+            <p>포트폴리오</p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 export default Intro;
