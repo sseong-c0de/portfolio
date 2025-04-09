@@ -30,11 +30,11 @@
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #7E583A;
+  background-color: #7e583a;
 }
 .close {
   font-size: 3rem;
-  color:#7E583A;
+  color: #7e583a;
   font-weight: bold;
 }
 .gnbWrap {
@@ -65,78 +65,34 @@
 
 /* 768px 태블릿 시작 */
 
-@media screen and (min-width:768px) {
-
-  .headerContainer {
-    width: 100%;
-    height: 100px;
-    background: #ead6be;
-    position: fixed;
-    border-bottom: solid #111 1px;
-  }
+@media screen and (min-width: 768px) {
   .headerCenter {
     width: 86.98%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
-  
+
   .headerCenter h1 {
     font-size: 3rem;
   }
   .burger {
-    display: flex;
-    flex-direction: column;
     gap: 7px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-left: auto;
   }
   .bar {
     width: 30px;
     height: 5px;
-    background-color: #7E583A;
   }
   .close {
     font-size: 4rem;
-    color:#7E583A
   }
   .gnbWrap {
-    width: 100%;
     font-size: 2.2rem;
-    background-color: burlywood;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: all 0.4s ease-in-out;
-  }
-  .gnbWrap.show {
-    max-height: 230px;
-    opacity: 1;
   }
   .gnb {
-    width: 83.33%;
-    height: auto;
-    margin: 0 auto;
-  }
-  .gnb li {
-    padding: 30px 30px 0 0;
-  }
-  .gnb li:last-child {
-    padding-bottom: 30px;
+    width: 86.98%;
   }
 }
 /* 1024px 노트북 시작*/
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .headerContainer {
-    width: 100%;
-    height: 100px;
-    background: #ead6be;
-    position: fixed;
-    border-bottom: solid #111 1px;
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
@@ -144,29 +100,26 @@
   }
   .headerCenter {
     width: 27%;
-    height: 100%;
-    margin: 0 ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 0;
+    display: block;
   }
-  
+
   .headerCenter h1 {
     font-size: 3rem;
+    line-height: 100px;
   }
   .burger {
     display: none;
   }
   .gnbWrap {
-    all:unset;
-
+    all: unset;
   }
   .gnb {
-    width:100%;
+    width: 100%;
     display: flex;
-    gap:30px;
+    gap: 30px;
     justify-content: space-between;
-    margin:0;
+    margin: 0;
     line-height: 99px;
   }
   .gnb li {
@@ -182,53 +135,19 @@
 }
 /* 1600px pc시작 */
 /* 여기서부터 시작해야함 */
-@media screen and (min-width:1600px) {
+@media screen and (min-width: 1600px) {
   .headerContainer {
-    width: 100%;
-    height: 100px;
-    background: #ead6be;
-    position: fixed;
-    border-bottom: solid #111 1px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 30px;
-    margin: 0 auto;
+    padding: 0 160px;
   }
   .headerCenter {
-    width: 27%;
+    width: 260px;
     height: 100%;
-    margin: 0 ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
-  
-  .headerCenter h1 {
-    font-size: 3rem;
-  }
-  .burger {
-    display: none;
-  }
-  .gnbWrap {
-    all:unset;
 
-  }
-  .gnb {
-    width:100%;
-    display: flex;
-    gap:30px;
-    justify-content: space-between;
-    margin:0;
-    line-height: 99px;
-  }
-  .gnb li {
-    padding: 0;
-    font-size: 2rem;
-  }
-  .gnb li:last-child {
-    padding-bottom: 0px;
+  .headerCenter h1 {
+    font-size: 3.2rem;
   }
   .gnb li a {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 }

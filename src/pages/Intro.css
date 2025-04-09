@@ -18,3 +18,53 @@
   padding-top: 250px;
   margin-bottom: 20px;
 }
+/* 768px 태블릿시작 */
+@media screen and (min-width: 768px) {
+  .introBg {
+    height: 1080px;
+    /* 다른사이트 보고 조정 */
+  }
+  .introText {
+    width: 35.93%;
+    height: 150px;
+  }
+
+  .introText p {
+    font-size: 6rem;
+  }
+  .introText p:first-child {
+    padding-top: 400px;
+  }
+}
+/* 노트북시작 */
+@media screen and (min-width: 1024px) {
+  .introBg {
+    height: 1080px;
+  }
+  .introText {
+    width: 26.75%;
+  }
+
+  .introText p {
+    font-size: 6rem;
+  }
+  .introText p:first-child {
+    padding-top: 400px;
+  }
+}
+/* PC시작 */
+@media screen and (min-width: 1024px) {
+  .introBg {
+    height: 1080px;
+  }
+  .introText {
+    width: auto;
+  }
+
+  .introText p {
+    font-size: 6rem;
+  }
+  .introText p:first-child {
+    padding-top: 400px;
+  }
+}

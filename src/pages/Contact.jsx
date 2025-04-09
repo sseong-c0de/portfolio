@@ -8,7 +8,7 @@ function Contact() {
       <div className="contactContainer">
         <div className="contactContents">
           <div className="contactThank">
-            <p>저의 포트폴리오를 끝까지 읽어주셔서 감사합니다</p>
+            <p>저의 포트폴리오를 끝까지 봐주셔서 감사합니다</p>
           </div>
           <div className="contactClosing">
             <p>
