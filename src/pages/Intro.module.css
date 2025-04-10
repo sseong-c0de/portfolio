@@ -3,65 +3,65 @@
   width: 100%;
   padding-top: 100px;
 }
-.introContainer {
+.container {
   background-color: #f7e9dc;
   height: 600px;
   width: 100%;
 }
-.introText {
+.textBox {
   width: 46.11%;
   height: 83px;
   margin: 0 auto;
   padding-top: 200px;
 }
 
-.introText p {
+.textBox p {
   font-size: 3.6rem;
   text-align: center;
 }
-.introText p:first-child {
+.textBox p:first-child {
   margin-bottom: 20px;
 }
 /* 768px 태블릿시작 */
 @media screen and (min-width: 768px) {
-  .introBg {
+  .container {
     height: 1080px;
   }
-  .introText {
+  .textBox {
     width: 35.93%;
     height: 150px;
+    padding-top: 400px;
   }
 
-  .introText p {
+  .textBox p {
     font-size: 6rem;
   }
 }
 /* 노트북시작 */
 @media screen and (min-width: 1024px) {
-  .introBg {
+  .container {
     height: 1080px;
   }
-  .introText {
+  .textBox {
     width: 26.75%;
+    padding-top: 350px;
   }
 
-  .introText p {
+  .textBox p {
     font-size: 6rem;
   }
 }
 /* PC시작 */
 @media screen and (min-width: 1600px) {
-  .introBg {
+  .container {
     height: 1080px;
   }
-  .introText {
-    width: auto;
+  .textBox {
+    width: 280px;
+    height: auto;
   }
 
-  .introText p {
+  .textBox p {
     font-size: 6rem;
-  }
-  .introText p:first-child {
-    padding-top: 400px;
   }
 }

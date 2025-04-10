@@ -1,30 +1,30 @@
 import { useState } from "react";
-import "./Header.css";
+import styles from "./Header.module.css";
 function HeaderBar() {
   const [open, setOpen] = useState(false);
   return (
     <header>
-      <div className="headerContainer">
-        <div className="headerCenter">
-          <div className="h1Wrap">
+      <div className={styles.container}>
+        <div className={styles.center}>
+          <div className={styles.h1Wrap}>
             <h1>이재성의 포트폴리오</h1>
           </div>
-          <button className="burger" onClick={() => setOpen(!open)}>
+          <button className={styles.burger} onClick={() => setOpen(!open)}>
             {open ? (
-              <span className="close">✕</span>
+              <span className={styles.close}>✕</span>
             ) : (
               <>
-                <span className="bar"></span>
-                <span className="bar"></span>
-                <span className="bar"></span>
+                <span className={styles.bar}></span>
+                <span className={styles.bar}></span>
+                <span className={styles.bar}></span>
               </>
             )}
           </button>
         </div>
         <nav>
           <h2 className="screen_out">main_navigation</h2>
-          <div className={open ? "gnbWrap show" : "gnbWrap"}>
-            <ul className="gnb">
+          <div className={`${styles.gnbWrap} ${open ? styles.show : ""}`}>
+            <ul className={styles.gnb}>
               <li>
                 <a href="#">인트로</a>
               </li>

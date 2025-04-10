@@ -1,4 +1,3 @@
-import ProfileBox from "../Component/ProfileBox";
 import "./Profile.css/";
 function Profile() {
   const skillIcons = Array(10).fill("");
@@ -20,7 +19,52 @@ function Profile() {
         </div>
         <div className="profileRight">
           <div className="profileDetail">
-            <ProfileBox title={"학력사항"}>
+            <div className="detailInfoBox">
+              <h3 className="title">학력사항</h3>
+              <div className="detailBox">
+                <span>2016.03 ~ 2019.02</span>
+                <span>두원공업고등학교</span>
+              </div>
+              <div className="detailBox">
+                <span>2016.03 ~ 2019.02</span>
+                <span>한국폴리텍대학</span>
+              </div>
+              <div className="detailBox">
+                <span>2016.03 ~ 2019.02</span>
+                <span>sbs아카데미</span>
+              </div>
+            </div>
+            <div className="detailInfoBox">
+              <h3 className="title">경력사항</h3>
+              <div className="detailBox">
+                <span>2016.03 ~ 2019.02</span>
+                <span>코멕스카본</span>
+              </div>
+            </div>
+            <div className="detailInfoBox">
+              <h3 className="title">자격사항 및 면허</h3>
+              <div className="detailBox">
+                <span>2016.03 ~ 2019.02</span>
+                <span>밀링기능사</span>
+              </div>
+              <div className="detailBox">
+                <span>2016.03 ~ 2019.02</span>
+                <span>운전면허</span>
+              </div>
+            </div>
+            <div className="detailInfoBox">
+              <h3 className="title">활용프로그램 및 라이브러리</h3>
+              <div className="skillBox">
+                {skillIcons.map((_, index) => {
+                  return (
+                    <div key={index} className="skillicon">
+                      {index}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+            {/* <ProfileBox title={"학력사항"}>
               <div className="detailBox">
                 <span>2016.03 ~ 2019.02</span>
                 <span>두원공업고등학교</span>
@@ -49,8 +93,8 @@ function Profile() {
                 <span>2016.03 ~ 2019.02</span>
                 <span>운전면허</span>
               </div>
-            </ProfileBox>
-            <ProfileBox title={"활용프로그램 및 라이브러리"}>
+            </ProfileBox> */}
+            {/* <ProfileBox title={"활용프로그램 및 라이브러리"}>
               <div className="skillBox">
                 {skillIcons.map((_, index) => {
                   return (
@@ -60,10 +104,10 @@ function Profile() {
                   );
                 })}
               </div>
-            </ProfileBox>
+            </ProfileBox> */}
           </div>
           <div className="profileIntroduce">
-            <h3>자기소개</h3>
+            <h3 className="title">자기소개</h3>
             <p>
               안녕하세요. 처음 코딩을 시작하면서 웹을 만들며 내가 작성한코드가
               원하는 대로 동작하는 사이트를 보고 느낀 기쁨과 재미를 잊지 않고
