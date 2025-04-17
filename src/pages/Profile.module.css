@@ -3,16 +3,16 @@
   width: 100%;
   padding-top: 100px;
 }
-.profileContainer {
+.container {
   width: 83.33%;
   margin: 0 auto;
 }
-.sectionTitle {
+.title {
   width: 100%;
   margin-bottom: 30px;
   text-align: center;
 }
-.sectionTitle h2 {
+.title h2 {
   font-size: 4.6rem;
 }
 .profileLeft,
@@ -53,7 +53,7 @@
   line-height: 1.3;
   padding: 10px;
 }
-.title {
+.detailTitle {
   font-size: 2.4rem;
   padding: 10px 0 10px 10px;
 }
@@ -81,7 +81,7 @@
   .profileSection {
     padding-top: 100px;
   }
-  .profileContainer {
+  .container {
     width: 86.98%;
     display: flex;
     justify-content: space-between;
@@ -108,7 +108,7 @@
     font-size: 1.8rem;
     line-height: 1.4;
   }
-  .title {
+  .detailTitle {
     padding: 10px 0 10px 10px;
   }
   .detailBox {
@@ -122,7 +122,7 @@
 }
 /* 1024px 태블릿 시작 */
 @media screen and (min-width: 1024px) {
-  .profileContainer {
+  .container {
     width: 88.28%;
     display: flex;
     justify-content: space-between;
@@ -157,7 +157,7 @@
     font-size: 2rem;
     line-height: 1.4;
   }
-  .title {
+  .detailTitle {
     padding: 10px 0 10px 10px;
   }
   .detailBox {
@@ -182,7 +182,7 @@
   .profileSection {
     padding-top: 150px;
   }
-  .profileContainer {
+  .container {
     width: 1600px;
     margin: 0 auto;
     display: flex;
@@ -217,10 +217,10 @@
     line-height: 1.4;
     padding: 0 30px 0 30px;
   }
-  .profileIntroduce .title {
+  .profileIntroduce .detailTitle {
     padding-top: 50px;
   }
-  .title {
+  .detailTitle {
     padding: 20px 0 20px 30px;
   }
   .detailBox {

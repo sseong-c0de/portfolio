@@ -1,8 +1,8 @@
 @charset "utf-8";
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /**
@@ -11,48 +11,49 @@
  */
 
 html {
-	font-size: 0.625em;
+  font-size: 0.625em;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
-li{
-	list-style: none;
+li {
+  list-style: none;
 }
 
 a {
-	color: #333;
-	text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 
-
-
- button{
-
+button {
   border: none;
 
-	cursor: pointer;
-
-} 
+  cursor: pointer;
+}
 /*global_class*/
 
 .clearfix:after {
-	content: "";
-	display: block;
-	clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .screen_out {
-	position: absolute;
-	top: -9999em;
+  position: absolute;
+  top: -9999em;
 }
 
-.ir_pm {display:block; overflow:hidden; font-size:0; line-height:0; text-indent:-9999px;}
-
+.ir_pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
 
 /* .modal {
 	position: fixed;
@@ -64,8 +65,14 @@ a {
 	display: none;
 	z-index: 99
 } */
-.hidden{
-	display: none;
+.hidden {
+  display: none;
 }
-
-
+.sectionTitle {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.sectionTitle h2 {
+  font-size: 4.6rem;
+}

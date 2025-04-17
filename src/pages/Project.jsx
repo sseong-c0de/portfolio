@@ -2,6 +2,7 @@ import ProjectDropDown from "../Component/ProjectDropdown";
 import ProjectBtn from "../Component/ProjectBtn";
 import ProjectData from "../Data/ProjectData";
 import "./Project.css";
+import styles from "./Project.module.css";
 
 function Project() {
   // const fixLabels = {
@@ -13,54 +14,54 @@ function Project() {
   // };
 
   return (
-    <section className="projectSection">
-      <div className="sectionTitle">
+    <section className={styles.section}>
+      <div className={styles.title}>
         <h2>02 프로젝트</h2>
-        <div className="projectBtn">
+        <div className={styles.projectBtn}>
           <ProjectDropDown></ProjectDropDown>
           <ProjectBtn></ProjectBtn>
         </div>
       </div>
-      <div className="projectContainer">
-        <div className="projectBg">
-          <div className="scrollBox">
+      <div className={styles.container}>
+        <div className={styles.projectBg}>
+          <div className={styles.scrollBox}>
             <p>마우스를 올린후에 스크롤을 내려보세요</p>
           </div>
-          <div className="projectBox">
-            <div className="projectImg">
+          <div className={styles.projectBox}>
+            <div className={styles.projectImg}>
               <img></img>
             </div>
-            <div className="projectDescription">
-              <div className="projectTitle">
+            <div className={styles.projectDescription}>
+              <div className={styles.projectTitle}>
                 <h3>carhartt</h3>
                 <p>칼하트</p>
                 <p>선호하는 의류 브랜드사이트를 리뉴얼해서 만들었습니다</p>
                 <div className="line"></div>
               </div>
-              <div className="projectDetailBox">
-                <div className="detailRow">
-                  <span className="label">타입</span>
-                  <span className="contents">
+              <div className={styles.projectDetailBox}>
+                <div className={styles.detailRow}>
+                  <span className={styles.label}>타입</span>
+                  <span className={styles.contents}>
                     반응형:모바일,태블릿,노트북,PC
                   </span>
                 </div>
-                <div className="detailRow">
-                  <span className="label">폰트</span>
-                  <span className="contents">데이터꺼내오기</span>
+                <div className={styles.detailRow}>
+                  <span className={styles.label}>폰트</span>
+                  <span className={styles.contents}>데이터꺼내오기</span>
                 </div>
-                <div className="detailRow">
-                  <span className="label">프로그램</span>
-                  <span className="contents">데이터꺼내오기</span>
+                <div className={styles.detailRow}>
+                  <span className={styles.label}>프로그램</span>
+                  <span className={styles.contents}>데이터꺼내오기</span>
                 </div>
-                <div className="detailRow">
-                  <span className="label">라이브러리</span>
-                  <span className="contents">데이터꺼내오기</span>
+                <div className={styles.detailRow}>
+                  <span className={styles.label}>라이브러리</span>
+                  <span className={styles.contents}>데이터꺼내오기</span>
                 </div>
               </div>
             </div>
-            <div className="projectPageBtn">
-              <button className="homePage">홈페이지</button>
-              <button className="design">디자인</button>
+            <div className={styles.projectPageBtn}>
+              <button className={styles.homePage}>홈페이지</button>
+              <button className={styles.design}>디자인</button>
             </div>
           </div>
         </div>

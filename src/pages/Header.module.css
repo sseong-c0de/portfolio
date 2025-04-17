@@ -6,17 +6,20 @@
   position: fixed;
   border-bottom: solid #111 1px;
 }
-.center {
+.headerInner {
   width: 83.33%;
   height: 100%;
   margin: 0 auto;
+  align-items: center;
+}
+.center {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.h1Wrap {
-  width: 100%;
-}
+
 .headerCenter h1 {
   font-size: 2.6rem;
 }
@@ -40,7 +43,10 @@
   font-weight: bold;
 }
 .gnbWrap {
-  width: 100%;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100vw;
   font-size: 2rem;
 
   background-color: burlywood;
@@ -68,8 +74,11 @@
 /* 768px 태블릿 시작 */
 
 @media screen and (min-width: 768px) {
-  .center {
+  .headerInner {
     width: 86.98%;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
   }
 
   .center h1 {
@@ -94,10 +103,10 @@
 }
 /* 1024px 노트북 시작*/
 @media screen and (min-width: 1024px) {
-  .container {
+  .headerInner {
+    width: 88.28%;
     display: flex;
     justify-content: space-between;
-    padding: 0 60px;
     margin: 0 auto;
   }
   .center {
@@ -136,9 +145,12 @@
   }
 }
 /* 1600px pc시작 */
-@media screen and (min-width: 1600px) {
-  .container {
-    padding: 0 160px;
+@media screen and (min-width: 1700px) {
+  .headerInner {
+    width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
   }
   .center {
     width: 260px;

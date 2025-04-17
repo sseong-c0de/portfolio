@@ -1,113 +1,73 @@
-import "./Profile.css/";
+// import "./Profile.css/";
+import styles from "./Profile.module.css";
 function Profile() {
   const skillIcons = Array(10).fill("");
   return (
-    <section className="profileSection">
-      <div className="sectionTitle">
+    <section className={styles.profileSection}>
+      <div className={styles.title}>
         <h2>01 나의 프로필</h2>
       </div>
-      <div className="profileContainer">
-        <div className="profileLeft">
-          <div className="profilePicture">
-            <div className="asd">사진 박스</div>
+      <div className={styles.container}>
+        <div className={styles.profileLeft}>
+          <div className={styles.profilePicture}>
+            <div className={styles.pictureBox}>사진 박스</div>
           </div>
-          <div className="profileInfoBox">
+          <div className={styles.profileInfoBox}>
             <p>이름:이재성(2000.09.29)</p>
             <p>전화번호:010 0000 0000</p>
             <p>이메일:만들 예정 </p>
           </div>
         </div>
-        <div className="profileRight">
-          <div className="profileDetail">
-            <div className="detailInfoBox">
-              <h3 className="title">학력사항</h3>
-              <div className="detailBox">
+        <div className={styles.profileRight}>
+          <div className={styles.profileDetail}>
+            <div className={styles.detailInfoBox}>
+              <h3 className={styles.detailTitle}>학력사항</h3>
+              <div className={styles.detailBox}>
                 <span>2016.03 ~ 2019.02</span>
                 <span>두원공업고등학교</span>
               </div>
-              <div className="detailBox">
+              <div className={styles.detailBox}>
                 <span>2016.03 ~ 2019.02</span>
                 <span>한국폴리텍대학</span>
               </div>
-              <div className="detailBox">
+              <div className={styles.detailBox}>
                 <span>2016.03 ~ 2019.02</span>
                 <span>sbs아카데미</span>
               </div>
             </div>
-            <div className="detailInfoBox">
-              <h3 className="title">경력사항</h3>
-              <div className="detailBox">
+            <div className={styles.detailInfoBox}>
+              <h3 className={styles.detailTitle}>경력사항</h3>
+              <div className={styles.detailBox}>
                 <span>2016.03 ~ 2019.02</span>
                 <span>코멕스카본</span>
               </div>
             </div>
-            <div className="detailInfoBox">
-              <h3 className="title">자격사항 및 면허</h3>
-              <div className="detailBox">
+            <div className={styles.detailInfoBox}>
+              <h3 className={styles.detailTitle}>자격사항 및 면허</h3>
+              <div className={styles.detailBox}>
                 <span>2016.03 ~ 2019.02</span>
                 <span>밀링기능사</span>
               </div>
-              <div className="detailBox">
+              <div className={styles.detailBox}>
                 <span>2016.03 ~ 2019.02</span>
                 <span>운전면허</span>
               </div>
             </div>
-            <div className="detailInfoBox">
-              <h3 className="title">활용프로그램 및 라이브러리</h3>
-              <div className="skillBox">
+            <div className={styles.detailInfoBox}>
+              <h3 className={styles.detailTitle}>활용프로그램 및 라이브러리</h3>
+              <div className={styles.skillBox}>
                 {skillIcons.map((_, index) => {
                   return (
-                    <div key={index} className="skillicon">
+                    <div key={index} className={styles.skillicon}>
                       {index}
                     </div>
                   );
                 })}
               </div>
             </div>
-            {/* <ProfileBox title={"학력사항"}>
-              <div className="detailBox">
-                <span>2016.03 ~ 2019.02</span>
-                <span>두원공업고등학교</span>
-              </div>
-              <div className="detailBox">
-                <span>2016.03 ~ 2019.02</span>
-                <span>한국폴리텍대학</span>
-              </div>
-              <div className="detailBox">
-                <span>2016.03 ~ 2019.02</span>
-                <span>sbs아카데미</span>
-              </div>
-            </ProfileBox>
-            <ProfileBox title={"경력사항"}>
-              <div className="detailBox">
-                <span>2016.03 ~ 2019.02</span>
-                <span>코멕스카본</span>
-              </div>
-            </ProfileBox>
-            <ProfileBox title={"자격사항 및 면허"}>
-              <div className="detailBox">
-                <span>2016.03 ~ 2019.02</span>
-                <span>밀링기능사</span>
-              </div>
-              <div className="detailBox">
-                <span>2016.03 ~ 2019.02</span>
-                <span>운전면허</span>
-              </div>
-            </ProfileBox> */}
-            {/* <ProfileBox title={"활용프로그램 및 라이브러리"}>
-              <div className="skillBox">
-                {skillIcons.map((_, index) => {
-                  return (
-                    <div key={index} className="skillicon">
-                      {index}
-                    </div>
-                  );
-                })}
-              </div>
-            </ProfileBox> */}
           </div>
-          <div className="profileIntroduce">
-            <h3 className="title">자기소개</h3>
+          <div className={styles.profileIntroduce}>
+            <h3 className={styles.detailTitle}>자기소개</h3>
             <p>
               안녕하세요. 처음 코딩을 시작하면서 웹을 만들며 내가 작성한코드가
               원하는 대로 동작하는 사이트를 보고 느낀 기쁨과 재미를 잊지 않고
