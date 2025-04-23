@@ -1,20 +1,21 @@
 import "./ProjectDropdown.css";
+import styles from "../pages/Project.module.css";
 import { useState } from "react";
 
 function ProjectDropDown() {
   const [open, setOpen] = useState(false);
   return (
-    <div className="onlyMobile">
-      <div className="dropDown">
+    <div className={styles.onlyMobile}>
+      <div className={styles.dropDown}>
         <button
-          className="dropDownUl"
+          className={styles.dropDownUl}
           onClick={() => {
             setOpen(!open);
           }}
         >
           프로젝트들
         </button>
-        <ul className={`dropDownMenu ${open ? "show" : ""}`}>
+        <ul className={`${styles.dropDownMenu} ${open ? styles.show : ""}`}>
           <li>칼하트</li>
           <li>테슬라</li>
           <li>투두리스트앱</li>
