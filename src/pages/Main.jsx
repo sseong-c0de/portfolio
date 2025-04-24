@@ -1,5 +1,5 @@
 import Intro from "./Intro";
-import Profile from "./ProFile";
+import Profile from "./Profile";
 import Project from "./Project";
 import Contact from "./Contact";
 function Main() {

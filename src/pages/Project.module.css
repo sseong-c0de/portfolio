@@ -1,7 +1,7 @@
 @charset "utf-8";
 .projectSection {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 100px;
   background: #ebd8c3;
 }
 .container {
@@ -162,9 +162,13 @@
   border-radius: 30px;
   color: #3f2712;
   cursor: pointer;
+  color: #fff;
 }
 .dropDownMenu li:first-child {
   margin-top: 20px;
+}
+.dropDownMenu li:hover {
+  background-color: #7e583a;
 }
 /* 768px 태블릿 시작 */
 @media screen and (min-width: 768px) {
@@ -282,7 +286,7 @@
     display: flex;
     justify-content: space-between;
   }
-  .projectBtnContainer a {
+  .projectBtnContainer button {
     width: 22%;
     height: 100%;
     background: #a67c52;
@@ -291,7 +295,7 @@
     line-height: 60px;
     color: #fff;
   }
-  .projectBtnContainer a:hover {
+  .projectBtnContainer button:hover {
     background-color: #7e583a;
   }
   .projectBox {
@@ -381,4 +385,14 @@
   .projectTitle h3 {
     font-size: 6rem;
   }
+}
+
+.fadeWrap {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s;
+}
+.fadeOut {
+  opacity: 0;
+  transform: translateY(-10px);
 }

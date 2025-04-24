@@ -1,8 +1,7 @@
-import "./Intro.css";
 import styles from "./Intro.module.css";
 function Intro() {
   return (
-    <section className={styles.introSection}>
+    <section className={styles.introSection} id="introSection">
       <div className={styles.container}>
         <div className={styles.textBox}>
           <p>이재성의</p>

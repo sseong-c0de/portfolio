@@ -1,9 +1,9 @@
 // import "./Profile.css/";
 import styles from "./Profile.module.css";
 function Profile() {
-  const skillIcons = Array(10).fill("");
+  const skillIcons = Array(6).fill("");
   return (
-    <section className={styles.profileSection}>
+    <section className={styles.profileSection} id="profileSection">
       <div className={styles.title}>
         <h2>01 나의 프로필</h2>
       </div>

@@ -1,26 +1,35 @@
 import ProjectDropDown from "../Component/ProjectDropdown";
 import ProjectBtn from "../Component/ProjectBtn";
 import ProjectData from "../Data/ProjectData";
-// import "./Project.css";
 import styles from "./Project.module.css";
+import { useState } from "react";
 
 function Project() {
-  // const fixLabels = {
-  //   type: "타입",
-  //   font: "폰트",
-  //   program: "활용 프로그램",
-  //   library: "활용 라이브러리",
-  //   typeContents: "반응형:모바일,태블릿,노트북,PC",
-  // };
+  const [selectProject, setSelectProject] = useState(ProjectData[0]);
+  const [fade, setFade] = useState(false);
 
+  const checkData = () => {
+    console.log(selectProject);
+  };
   return (
-    <section className={styles.projectSection}>
+    <section className={styles.projectSection} id="projectSection">
       <div className={styles.titleBox}>
         <div className={styles.title}>
           <h2>02 프로젝트</h2>
           <div className={styles.projectBtn}>
-            <ProjectDropDown className={styles.onlyMobile}></ProjectDropDown>
-            <ProjectBtn className={styles.onlyDesktop}></ProjectBtn>
+            <ProjectDropDown
+              className={styles.onlyMobile}
+              setSelectProject={setSelectProject}
+              ProjectData={ProjectData}
+              setFade={setFade}
+            ></ProjectDropDown>
+            <ProjectBtn
+              className={styles.onlyDesktop}
+              selectProject={selectProject}
+              setSelectProject={setSelectProject}
+              ProjectData={ProjectData}
+              setFade={setFade}
+            ></ProjectBtn>
           </div>
         </div>
       </div>
@@ -35,11 +44,15 @@ function Project() {
               <img></img>
             </div>
             <div className={styles.projectWrap}>
-              <div className={styles.projectDescription}>
+              <div
+                className={`${styles.projectDescription} ${styles.fadeWrap} ${
+                  fade ? styles.fadeOut : ""
+                }`}
+              >
                 <div className={styles.projectTitle}>
-                  <h3>carhartt</h3>
-                  <p>칼하트</p>
-                  <p>선호하는 의류 브랜드사이트를 리뉴얼해서 만들었습니다</p>
+                  <h3>{selectProject.title}</h3>
+                  <p>{selectProject.koTitle}</p>
+                  <p>{selectProject.description}</p>
                   <div className={styles.line}></div>
                 </div>
                 <div className={styles.projectDetailBox}>
@@ -51,15 +64,21 @@ function Project() {
                   </div>
                   <div className={styles.detailRow}>
                     <span className={styles.label}>폰트</span>
-                    <span className={styles.contents}>데이터꺼내오기</span>
+                    <span className={styles.contents}>
+                      {selectProject.details.font}
+                    </span>
                   </div>
                   <div className={styles.detailRow}>
                     <span className={styles.label}>프로그램</span>
-                    <span className={styles.contents}>데이터꺼내오기</span>
+                    <span className={styles.contents}>
+                      {selectProject.details.program}
+                    </span>
                   </div>
                   <div className={styles.detailRow}>
                     <span className={styles.label}>라이브러리</span>
-                    <span className={styles.contents}>데이터꺼내오기</span>
+                    <span className={styles.contents}>
+                      {selectProject.details.library}
+                    </span>
                   </div>
                 </div>
               </div>

@@ -1,0 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
+#profileSection {
+  scroll-margin-top: 100px;
+}
+#projectSection {
+  scroll-margin-top: 150px;
+}
+@media screen and (min-width: 1024px) {
+  #projectSection {
+    scroll-margin-top: 200px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  #projectSection {
+    scroll-margin-top: 250px;
+  }
+}
