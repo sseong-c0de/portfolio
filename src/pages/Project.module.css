@@ -17,6 +17,7 @@
 }
 .title h2 {
   font-size: 4.6rem;
+  font-family: "Pretendard";
 }
 .projectBtn {
   width: 83.33%;
@@ -65,13 +66,15 @@
 }
 .projectTitle {
   width: 100%;
-  height: 145px;
+
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
 }
 .projectTitle h3 {
   font-size: 4rem;
   padding: 10px 0 0 10px;
+  font-family: "Pretendard";
+  font-weight: 600;
 }
 .projectTitle p {
   padding: 10px 0 0 10px;
@@ -109,6 +112,7 @@
 }
 .contents {
   font-size: 1.6rem;
+  overflow-wrap: break-word;
 }
 .projectPageBtn {
   margin-top: 30px;
@@ -141,6 +145,7 @@
   background: #a67c52;
   border-radius: 50px;
   font-size: 1.8rem;
+  font-weight: 500;
 }
 .dropDownMenu {
   width: 100%;
@@ -150,6 +155,7 @@
   opacity: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+  font-weight: 500;
 }
 .dropDownMenu.show {
   max-height: 300px;
@@ -237,7 +243,6 @@
   .detailRow:nth-child(3),
   .detailRow:nth-child(4) {
     height: 90px;
-    line-height: 50px;
   }
   .detailRow:last-child {
     border-bottom: none;

@@ -1,7 +1,23 @@
-// import "./Profile.css/";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaFigma,
+  FaGitAlt,
+} from "react-icons/fa";
+
 import styles from "./Profile.module.css";
 function Profile() {
-  const skillIcons = Array(6).fill("");
+  const skillIcons = [
+    <FaHtml5 color="#E34F26" />,
+    <FaCss3Alt color="#1572B6" />,
+    <FaJs color="#F7DF1E" />,
+    <FaReact color="#61DAFB" />,
+    <FaFigma color="#A259FF" />,
+    <FaGitAlt color="#F05032" />,
+  ];
+
   return (
     <section className={styles.profileSection} id="profileSection">
       <div className={styles.title}>
@@ -56,10 +72,10 @@ function Profile() {
             <div className={styles.detailInfoBox}>
               <h3 className={styles.detailTitle}>활용프로그램 및 라이브러리</h3>
               <div className={styles.skillBox}>
-                {skillIcons.map((_, index) => {
+                {skillIcons.map((Icon, index) => {
                   return (
                     <div key={index} className={styles.skillicon}>
-                      {index}
+                      {Icon}
                     </div>
                   );
                 })}

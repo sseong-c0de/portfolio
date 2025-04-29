@@ -8,9 +8,6 @@ function Project() {
   const [selectProject, setSelectProject] = useState(ProjectData[0]);
   const [fade, setFade] = useState(false);
 
-  const checkData = () => {
-    console.log(selectProject);
-  };
   return (
     <section className={styles.projectSection} id="projectSection">
       <div className={styles.titleBox}>

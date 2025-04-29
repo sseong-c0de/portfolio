@@ -1,3 +1,40 @@
+@font-face {
+  font-family: "SUIT";
+  src: url(./Fonts/SUIT-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SUIT";
+  src: url(./Fonts/SUIT-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: "SUIT";
+  src: url(./Fonts/SUIT-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+} */
+
+/* @font-face {
+  font-family: "Pretendard";
+  src: url(./Fonts/Pretendard-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+} */
+@font-face {
+  font-family: "Pretendard";
+  src: url(./Fonts/Pretendard-SemiBold.woff2) format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url(./Fonts/Pretendard-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -16,4 +53,14 @@ html {
   #projectSection {
     scroll-margin-top: 250px;
   }
+}
+
+body {
+  font-family: "SUIT", sans-serif;
+}
+#moveBox {
+  padding: 50px;
+  background: red;
+  transition: all 0.3s;
+  perspective: 1000px;
 }

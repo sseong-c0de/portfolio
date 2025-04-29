@@ -13,6 +13,8 @@
   height: 83px;
   margin: 0 auto;
   padding-top: 200px;
+  font-family: "Pretendard";
+  font-weight: 600;
 }
 
 .textBox p {
@@ -37,18 +39,29 @@
     font-size: 6rem;
   }
 }
+@media screen and (max-width: 1023px) {
+  .moveBox {
+    pointer-events: none;
+  }
+}
 /* 노트북시작 */
 @media screen and (min-width: 1024px) {
   .container {
     height: 1080px;
   }
   .textBox {
-    width: 26.75%;
-    padding-top: 400px;
+    width: 50%;
+    padding-top: 350px;
+    perspective: 1000px;
   }
 
   .textBox p {
     font-size: 6rem;
+  }
+  .moveBox {
+    padding: 100px 50px 100px 50px;
+    transform-style: preserve-3d;
+    transition: all 0.3s;
   }
 }
 /* PC시작 */
@@ -57,7 +70,7 @@
     height: 1080px;
   }
   .textBox {
-    width: 280px;
+    width: 600px;
     height: auto;
   }
 
