@@ -34,7 +34,7 @@ function Project() {
       <div className={styles.container}>
         <div className={styles.projectBg}>
           <div className={styles.scrollBox}>
-            <p>마우스를 올린후에 스크롤을 내려보세요</p>
+            <p>이미지를 내려보세요</p>
           </div>
           <div className={styles.projectBox}>
             <div className={styles.projectImg}>
@@ -59,14 +59,14 @@ function Project() {
                       반응형:모바일,태블릿,노트북,PC
                     </span>
                   </div>
-                  <div className={styles.detailRow}>
+                  {/* <div className={styles.detailRow}>
                     <span className={styles.label}>폰트</span>
                     <span className={styles.contents}>
                       {selectProject.details.font}
                     </span>
-                  </div>
+                  </div> */}
                   <div className={styles.detailRow}>
-                    <span className={styles.label}>프로그램</span>
+                    <span className={styles.label}>사용 언어</span>
                     <span className={styles.contents}>
                       {selectProject.details.program}
                     </span>
@@ -75,6 +75,12 @@ function Project() {
                     <span className={styles.label}>라이브러리</span>
                     <span className={styles.contents}>
                       {selectProject.details.library}
+                    </span>
+                  </div>
+                  <div className={styles.detailRow}>
+                    <span className={styles.label}>프레임워크</span>
+                    <span className={styles.contents}>
+                      {selectProject.details.framework}
                     </span>
                   </div>
                 </div>

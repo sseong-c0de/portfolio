@@ -70,7 +70,7 @@ function Profile() {
               </div>
             </div>
             <div className={styles.detailInfoBox}>
-              <h3 className={styles.detailTitle}>활용프로그램 및 라이브러리</h3>
+              <h3 className={styles.detailTitle}>사용기술 스택</h3>
               <div className={styles.skillBox}>
                 {skillIcons.map((Icon, index) => {
                   return (

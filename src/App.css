@@ -58,9 +58,3 @@ html {
 body {
   font-family: "SUIT", sans-serif;
 }
-#moveBox {
-  padding: 50px;
-  background: red;
-  transition: all 0.3s;
-  perspective: 1000px;
-}

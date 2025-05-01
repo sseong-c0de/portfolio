@@ -8,6 +8,7 @@ const projectData = [
       font: "Pretendard,RedRose",
       program: "HTML,CSS,JavaScript",
       library: "jquery,swiper,fullpage",
+      framework: "없음 (라이브러리 기반 구성)",
     },
   },
   {
@@ -16,9 +17,10 @@ const projectData = [
     image: "",
     description: "선호하는 차 브랜드 사이트를 리뉴얼해서 만들었습니다",
     details: {
-      font: "Pretendard,RedRose",
+      font: "Roboto,Pretendard",
       program: "HTML,CSS,JavaScript",
-      library: "jquery,swiper,fullpage",
+      library: "jquery,swiper",
+      framework: "없음 (라이브러리 기반 구성)",
     },
   },
   {
@@ -29,7 +31,8 @@ const projectData = [
     details: {
       font: "Pretendard,RedRose",
       program: "HTML,CSS,JavaScript",
-      library: "jquery,swiper,fullpage",
+      library: "",
+      framework: "React (Vite기반)",
     },
   },
   {
@@ -40,7 +43,8 @@ const projectData = [
     details: {
       font: "Pretendard,RedRose",
       program: "HTML,CSS,JavaScript",
-      library: "jquery,swiper,fullpage",
+      library: "",
+      framework: "React (Vite기반)",
     },
   },
 ];
