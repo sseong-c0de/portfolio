@@ -55,6 +55,11 @@
   background: #fff;
   margin-bottom: 20px;
   border-radius: 30px;
+  overflow-y: auto;
+}
+.portfolioImg {
+  width: 100%;
+  height: auto;
 }
 .projectDescription {
   width: 100%;

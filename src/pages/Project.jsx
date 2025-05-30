@@ -2,12 +2,29 @@ import ProjectDropDown from "../Component/ProjectDropdown";
 import ProjectBtn from "../Component/ProjectBtn";
 import ProjectData from "../Data/ProjectData";
 import styles from "./Project.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Project() {
   const [selectProject, setSelectProject] = useState(ProjectData[0]);
   const [fade, setFade] = useState(false);
+  const [imgSize, setImgSize] = useState("");
 
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width >= 1700) setImgSize("PC");
+      else if (width >= 1024) setImgSize("laptop");
+      else if (width >= 768) setImgSize("tablet");
+      else setImgSize("mobile");
+    };
+
+    handleResize(); // 컴포넌트 처음 렌더링될 때도 실행
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize); // 정리
+    };
+  }, []);
   return (
     <section className={styles.projectSection} id="projectSection">
       <div className={styles.titleBox}>
@@ -38,7 +55,12 @@ function Project() {
           </div>
           <div className={styles.projectBox}>
             <div className={styles.projectImg}>
-              <img></img>
+              <img
+                className={`${styles.portfolioImg} ${styles.fadeWrap} ${
+                  fade ? styles.fadeOut : ""
+                }`}
+                src={selectProject.image[imgSize]}
+              />
             </div>
             <div className={styles.projectWrap}>
               <div
