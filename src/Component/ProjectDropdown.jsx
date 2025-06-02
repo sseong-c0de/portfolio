@@ -25,7 +25,7 @@ function ProjectDropDown({ setSelectProject, ProjectData, setFade }) {
             setOpen(!open);
           }}
         >
-          프로젝트들
+          프로젝트
         </button>
         <ul className={`${styles.dropDownMenu} ${open ? styles.show : ""}`}>
           <li

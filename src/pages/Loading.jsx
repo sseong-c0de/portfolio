@@ -7,9 +7,9 @@ function Loading() {
           <div className={styles.pBox}>
             <p>
               안녕하세요!
-              <br />곧 저의 포트폴리오가 시작됩니다
+              <br />곧 저의 포트폴리오가 시작됩니다.
               <br />
-              잠시만 기다려주세요
+              잠시만 기다려 주세요.
             </p>
           </div>
         </div>

@@ -44,9 +44,9 @@ const projectData = [
     },
     description: "리액트를 공부하며 만든 투두리스트 앱 입니다",
     details: {
-      font: "Pretendard,RedRose",
+      font: "Pretendard,Suit",
       program: "HTML,CSS,JavaScript",
-      library: "",
+      library: "React Hooks 기반",
       framework: "React (Vite기반)",
     },
   },
@@ -61,9 +61,9 @@ const projectData = [
     },
     description: "리액트를 공부하며 api를 받아와 만든 영화소개 사이트입니다",
     details: {
-      font: "Pretendard,RedRose",
+      font: "Pretendard,Londrina Solid",
       program: "HTML,CSS,JavaScript",
-      library: "",
+      library: "React Hooks 기반",
       framework: "React (Vite기반)",
     },
   },

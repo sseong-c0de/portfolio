@@ -18,7 +18,7 @@ function Project() {
       else setImgSize("mobile");
     };
 
-    handleResize(); // 컴포넌트 처음 렌더링될 때도 실행
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
