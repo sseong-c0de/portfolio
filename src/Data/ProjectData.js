@@ -4,7 +4,7 @@ const projectData = [
     koTitle: "칼하트",
     image: {
       PC: "/portfolio/portfolioimage/carhartt/carhartt1920.png",
-      laptop: "/portfolio/portfolioimage/carhartt/carhartt1024.png",
+      laptop: "/portfolio/portfolioimage/carhartt/칼carhartt1024.png",
       tablet: "/portfolio/portfolioimage/carhartt/carhartt768.png",
       mobile: "/portfolio/portfolioimage/carhartt/carhartt360.png",
     },
