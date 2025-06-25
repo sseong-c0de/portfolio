@@ -30,8 +30,8 @@ function Profile() {
           </div>
           <div className={styles.profileInfoBox}>
             <p>이름:이재성(2000.09.29)</p>
-            <p>전화번호:010 0000 0000</p>
-            <p>이메일:만들 예정 </p>
+            <p>전화번호:010 9400 5475</p>
+            <p>이메일:sseong5129@naver.com </p>
           </div>
         </div>
         <div className={styles.profileRight}>
@@ -39,34 +39,34 @@ function Profile() {
             <div className={styles.detailInfoBox}>
               <h3 className={styles.detailTitle}>학력사항</h3>
               <div className={styles.detailBox}>
-                <span>2016.03 ~ 2019.02</span>
                 <span>두원공업고등학교</span>
+                <span>2016.03 ~ 2019.01</span>
               </div>
               <div className={styles.detailBox}>
-                <span>2016.03 ~ 2019.02</span>
                 <span>한국폴리텍대학</span>
+                <span>2021.03 ~ 2023.02</span>
               </div>
               <div className={styles.detailBox}>
-                <span>2016.03 ~ 2019.02</span>
-                <span>sbs아카데미</span>
+                <span>sbs아카데미학원(강남)</span>
+                <span>2023.12 ~ 2024.11</span>
               </div>
             </div>
             <div className={styles.detailInfoBox}>
               <h3 className={styles.detailTitle}>경력사항</h3>
               <div className={styles.detailBox}>
-                <span>2016.03 ~ 2019.02</span>
-                <span>코멕스카본</span>
+                <span>(주)코다코(안성공장)</span>
+                <span>2017.04 ~ 2018.12</span>
+              </div>
+              <div className={styles.detailBox}>
+                <span>(주)코멕스카본</span>
+                <span>2019.07 ~ 2023.11</span>
               </div>
             </div>
             <div className={styles.detailInfoBox}>
               <h3 className={styles.detailTitle}>자격사항 및 면허</h3>
               <div className={styles.detailBox}>
-                <span>2016.03 ~ 2019.02</span>
-                <span>밀링기능사</span>
-              </div>
-              <div className={styles.detailBox}>
-                <span>2016.03 ~ 2019.02</span>
-                <span>운전면허</span>
+                <span>컴퓨터응용밀링기능사</span>
+                <span>2018.07</span>
               </div>
             </div>
             <div className={styles.detailInfoBox}>

@@ -15,6 +15,11 @@ const projectData = [
       library: "jquery,swiper,fullpage",
       framework: "없음 (라이브러리 기반 구성)",
     },
+    links: {
+      homepage: "https://sseong-c0de.github.io/Carhartt/",
+      designPage:
+        "https://www.figma.com/design/5d9a3DLbYyoXHcHJbtUZpM/portfolio-carhartt?node-id=0-1&t=MvkXZPC5IWS1fLNa-1",
+    },
   },
   {
     title: "Tesla",
@@ -31,6 +36,11 @@ const projectData = [
       program: "HTML,CSS,JavaScript",
       library: "jquery,swiper",
       framework: "없음 (라이브러리 기반 구성)",
+    },
+    links: {
+      homepage: "https://sseong-c0de.github.io/Tesla/",
+      designPage:
+        "https://www.figma.com/design/ixBVBdCxESJMYLPyD4R4t8/portfolio-Tesla?node-id=0-1&t=BD9Spf8uZ0LwNLbn-1",
     },
   },
   {
@@ -49,6 +59,11 @@ const projectData = [
       library: "React Hooks 기반",
       framework: "React (Vite기반)",
     },
+    links: {
+      homepage: "https://sseong-c0de.github.io/TodoList/",
+      designPage:
+        "https://www.figma.com/design/fijDjCEFjGkpT2gdoyrgzY/Todolist?node-id=0-1&t=ipG1MkHgOwH2kPaB-1",
+    },
   },
   {
     title: "FlimFind",
@@ -65,6 +80,11 @@ const projectData = [
       program: "HTML,CSS,JavaScript",
       library: "React Hooks 기반",
       framework: "React (Vite기반)",
+    },
+    links: {
+      homepage: "https://sseong-c0de.github.io/FilmFind/",
+      designPage:
+        "https://www.figma.com/design/QTdCmwx4NxTQiAOYtMUfj0/portfolio-FilmFind?node-id=0-1&t=8SqBI2eQkjJOKs4O-1",
     },
   },
 ];

@@ -81,12 +81,7 @@ function Project() {
                       반응형:모바일,태블릿,노트북,PC
                     </span>
                   </div>
-                  {/* <div className={styles.detailRow}>
-                    <span className={styles.label}>폰트</span>
-                    <span className={styles.contents}>
-                      {selectProject.details.font}
-                    </span>
-                  </div> */}
+
                   <div className={styles.detailRow}>
                     <span className={styles.label}>사용 언어</span>
                     <span className={styles.contents}>
@@ -108,8 +103,12 @@ function Project() {
                 </div>
               </div>
               <div className={styles.projectPageBtn}>
-                <a href="#">홈페이지</a>
-                <a href="#">디자인</a>
+                <a href={selectProject.links.homepage} target="_blank">
+                  홈페이지
+                </a>
+                <a href={selectProject.links.designPage} target="_blank">
+                  디자인
+                </a>
               </div>
             </div>
           </div>

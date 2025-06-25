@@ -23,10 +23,10 @@ function Contact() {
           <p>이메일 & 연락처</p>
           <div className={styles.emailPhone}>
             <div className={styles.email}>
-              <p>이메일: jsjssj@jsjsjss</p>
+              <p>이메일: sseong5129@naver.com</p>
             </div>
             <div className={styles.phone}>
-              <p>연락처: 01000000000</p>
+              <p>연락처: 010 9400 5475</p>
             </div>
           </div>
         </div>
