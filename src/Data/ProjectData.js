@@ -3,10 +3,10 @@ const projectData = [
     title: "Carhartt",
     koTitle: "칼하트",
     image: {
-      PC: "/portfolioimage/carhartt/carhartt1920.png",
-      laptop: "/portfolioimage/carhartt/carhartt1024.png",
-      tablet: "/portfolioimage/carhartt/carhartt768.png",
-      mobile: "/portfolioimage/carhartt/carhartt360.png",
+      PC: "portfolioimage/carhartt/carhartt1920.png",
+      laptop: "portfolioimage/carhartt/carhartt1024.png",
+      tablet: "portfolioimage/carhartt/carhartt768.png",
+      mobile: "portfolioimage/carhartt/carhartt360.png",
     },
     description: "선호하는 의류브랜드 사이트를 리뉴얼해서 만들었습니다",
     details: {
