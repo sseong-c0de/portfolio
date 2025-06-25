@@ -31,7 +31,7 @@ function Profile() {
           <div className={styles.profileInfoBox}>
             <p>이름:이재성(2000.09.29)</p>
             <p>전화번호:010 9400 5475</p>
-            <p>이메일:sseong5129@naver.com </p>
+            <p>이메일: sseong5129@naver.com </p>
           </div>
         </div>
         <div className={styles.profileRight}>
