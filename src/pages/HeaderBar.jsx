@@ -14,7 +14,9 @@ function HeaderBar() {
         <div className={styles.headerInner}>
           <div className={styles.center}>
             <div className={styles.h1Wrap}>
-              <h1>이재성의 포트폴리오</h1>
+              <h1>
+                <a href="#introSection">이재성의 포트폴리오</a>
+              </h1>
             </div>
             <button className={styles.burger} onClick={() => setOpen(!open)}>
               {open ? (
