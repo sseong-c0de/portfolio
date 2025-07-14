@@ -29,7 +29,7 @@ function Project() {
     <section className={styles.projectSection} id="projectSection">
       <div className={styles.titleBox}>
         <div className={styles.title}>
-          <h2>02 프로젝트</h2>
+          <h2>03 Project</h2>
           <div className={styles.projectBtn}>
             <ProjectDropDown
               className={styles.onlyMobile}
@@ -54,14 +54,17 @@ function Project() {
             <p>이미지를 내려보세요</p>
           </div>
           <div className={styles.projectBox}>
-            <div className={styles.projectImg}>
-              <img
-                className={`${styles.portfolioImg} ${styles.fadeWrap} ${
-                  fade ? styles.fadeOut : ""
-                }`}
-                src={selectProject.image[imgSize]}
-              />
+            <div className={styles.deviceImg}>
+              <div className={styles.projectImg}>
+                <img
+                  className={`${styles.portfolioImg} ${styles.fadeWrap} ${
+                    fade ? styles.fadeOut : ""
+                  }`}
+                  src={selectProject.image[imgSize]}
+                />
+              </div>
             </div>
+
             <div className={styles.projectWrap}>
               <div
                 className={`${styles.projectDescription} ${styles.fadeWrap} ${

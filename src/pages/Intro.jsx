@@ -31,8 +31,8 @@ function Intro() {
             onMouseMove={handdleMove}
             onMouseOut={handdleOut}
           >
-            <p>이재성의</p>
-            <p>포트폴리오</p>
+            <p>JAE SEONG's</p>
+            <p>PORTFOLIO</p>
           </div>
         </div>
       </div>

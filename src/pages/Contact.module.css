@@ -1,18 +1,19 @@
 @charset "utf-8";
 .contactSection {
   width: 100%;
-  margin-top: 50px;
-  background: #bfae99;
+  background: #000;
   color: #fff;
 }
 .title {
   width: 100%;
-  background: #fff;
-  color: #000;
+  background: #000;
+  color: #fff;
   text-align: center;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 50px 0 50px 0;
 }
 .title > h2 {
-  padding-bottom: 50px;
   font-size: 4.6rem;
   font-family: "Pretendard";
   font-weight: 600;
@@ -55,9 +56,6 @@
 }
 /* 768시작 */
 @media screen and (min-width: 768px) {
-  .contactSection {
-    margin-top: 100px;
-  }
   .contactContainer {
     width: 86.98%;
   }
@@ -77,9 +75,6 @@
 }
 /* 1700시작 */
 @media screen and (min-width: 1700px) {
-  .contactSection {
-    margin-top: 100px;
-  }
   .contactContainer {
     width: 700px;
   }

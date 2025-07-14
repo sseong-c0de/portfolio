@@ -4,7 +4,7 @@ function Contact() {
   return (
     <section className={styles.contactSection} id="contactSection">
       <div className={styles.title}>
-        <h2>03 컨택트</h2>
+        <h2>04 Contact</h2>
       </div>
       <div className={styles.contactContainer}>
         <div className={styles.contactContents}>

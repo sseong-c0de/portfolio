@@ -1,0 +1,101 @@
+@charset "utf-8";
+.skillSection {
+  width: 100%;
+  background: #000;
+}
+.title {
+  width: 100%;
+  background: #000;
+  padding: 50px 0 50px 0;
+  color: #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.title h2 {
+  font-size: 4.6rem;
+  text-align: center;
+}
+.container {
+  width: 83.33%;
+  color: #fff;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+.leftSkill,
+.rightSkill {
+  width: 100%;
+}
+.rightSkill {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.skillItem {
+  width: 100%;
+  padding-top: 40px;
+}
+.skillItem:nth-of-type(1) {
+  padding-top: 0;
+}
+.Icontitle {
+  width: 100%;
+  display: flex;
+}
+.iconName {
+  font-size: 2.6rem;
+  padding-left: 20px;
+  line-height: 3.5;
+}
+.iconInfo {
+  padding-top: 20px;
+  font-size: 1.8rem;
+}
+.Icontitle img {
+  width: 75px;
+  height: 75px;
+}
+/* 768px */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 86.98%;
+    padding-top: 80px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 86.98%;
+  }
+  .title h2 {
+    font-size: 6rem;
+  }
+  .skillItem {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .rightSkill {
+    padding-bottom: 100px;
+  }
+  .Icontitle img {
+    width: 100px;
+    height: 100px;
+  }
+  .iconName {
+    font-size: 3.2rem;
+  }
+  .iconInfo {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .container {
+    width: 1600px;
+    display: flex;
+    padding-top: 100px;
+  }
+  .rightSkill {
+    padding-top: 100px;
+  }
+  .leftSkill {
+    padding-bottom: 100px;
+  }
+}

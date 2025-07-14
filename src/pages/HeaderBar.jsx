@@ -15,7 +15,7 @@ function HeaderBar() {
           <div className={styles.center}>
             <div className={styles.h1Wrap}>
               <h1>
-                <a href="#introSection">이재성의 포트폴리오</a>
+                <a href="#introSection">JAE SEONG's PORTFOLIO</a>
               </h1>
             </div>
             <button className={styles.burger} onClick={() => setOpen(!open)}>
@@ -35,16 +35,16 @@ function HeaderBar() {
             <div className={`${styles.gnbWrap} ${open ? styles.show : ""}`}>
               <ul className={styles.gnb}>
                 <li onClick={setClose}>
-                  <a href="#introSection">인트로</a>
+                  <a href="#introSection">Home</a>
                 </li>
                 <li onClick={setClose}>
-                  <a href="#profileSection">프로필</a>
+                  <a href="#profileSection">Profile</a>
                 </li>
                 <li onClick={setClose}>
-                  <a href="#projectSection">프로젝트</a>
+                  <a href="#projectSection">Project</a>
                 </li>
                 <li onClick={setClose}>
-                  <a href="#contactSection">컨택트</a>
+                  <a href="#contactSection">Contact</a>
                 </li>
               </ul>
             </div>

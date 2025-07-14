@@ -1,8 +1,7 @@
 @charset "utf-8";
 .projectSection {
   width: 100%;
-  margin-top: 100px;
-  background: #ebd8c3;
+  background: #000;
 }
 .container {
   width: 83.33%;
@@ -11,9 +10,12 @@
 .title {
   width: 100%;
   margin-bottom: 30px;
+  padding: 50px 0 50px 0;
   text-align: center;
-  background: #fff;
-  padding-bottom: 30px;
+  background: #000;
+  color: #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 .title h2 {
   font-size: 4.6rem;
@@ -33,6 +35,7 @@
 .projectBg {
   width: 100%;
 }
+
 .scrollBox {
   width: 100%;
   height: 90px;
@@ -46,16 +49,32 @@
 }
 .projectBox {
   width: 100%;
-  margin-top: 25px;
+
+  margin-top: 50px;
+}
+/* .projectWrap {
+  padding-top: 1000px;
+} */
+.deviceImg {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  height: 500px;
+  background: url("/portfolio/portfolioimage/Device/mobile.webp") no-repeat
+    center/contain;
+  padding-top: 10px;
 }
 .projectImg {
   width: 100%;
-  height: 300px;
-  margin: 0 auto;
+  max-width: 200px;
+  height: 460px;
+  margin: 0 auto 50px auto;
   background: #fff;
-  margin-bottom: 20px;
   border-radius: 30px;
   overflow-y: auto;
+}
+.projectImg::-webkit-scrollbar {
+  display: none;
 }
 .portfolioImg {
   width: 100%;
@@ -65,7 +84,7 @@
   width: 100%;
   background: #fff;
   border-radius: 30px;
-  color: #4b3f33;
+  color: #000;
 }
 .projectTitle {
   width: 100%;
@@ -105,12 +124,12 @@
   border-bottom: 1px solid #000;
 }
 .detailRow:last-child {
-  padding-top: 15px;
-  line-height: 25px;
+  line-height: 20px;
   border-bottom: none;
+  padding-top: 20px;
 }
 .label {
-  font-size: 2.6rem;
+  font-size: 2rem;
 }
 .contents {
   font-size: 1.8rem;
@@ -129,12 +148,12 @@
   font-size: 2.4rem;
   border-radius: 30px;
   color: #fff;
-  background: #a67c52;
+  background: #666666;
   text-align: center;
   line-height: 50px;
 }
 .projectPageBtn a:hover {
-  background: #7e583a;
+  background: #333333;
 }
 /* 버튼css */
 .dropDown {
@@ -144,7 +163,7 @@
   width: 100%;
   height: 50px;
   color: #fff;
-  background: #a67c52;
+  background: #666666;
   border-radius: 50px;
   font-size: 1.8rem;
   font-weight: 500;
@@ -164,11 +183,10 @@
   opacity: 1;
 }
 .dropDownMenu li {
-  background: burlywood;
+  background: #333;
   padding: 15px 0 15px 0;
   margin-bottom: 20px;
   border-radius: 30px;
-  color: #3f2712;
   cursor: pointer;
   color: #fff;
 }
@@ -176,21 +194,19 @@
   margin-top: 20px;
 }
 .dropDownMenu li:hover {
-  background-color: #7e583a;
+  color: #666666;
 }
 /* 768px 태블릿 시작 */
 @media screen and (min-width: 768px) {
-  .projectSection {
-    margin-top: 100px;
-  }
   .container {
     width: 86.98%;
   }
   .titleBox {
     width: 100%;
     height: auto;
-    background: #fff;
     margin-bottom: 100px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
   }
   .title {
     display: flex;
@@ -198,7 +214,7 @@
     align-items: center;
     width: 86.98%;
     margin: 0 auto;
-    padding-bottom: 50px;
+    border: none;
   }
   .title h2 {
     margin-bottom: auto;
@@ -220,15 +236,25 @@
     display: flex;
     justify-content: space-between;
   }
+  .deviceImg {
+    width: 60%;
+    height: 500px;
+    background: url("/portfolio/portfolioimage/Device/tablet.webp") no-repeat
+      center/contain;
+    padding-top: 73px;
+  }
   .projectImg {
-    width: 61.38%;
-    max-width: 410px;
-    height: 560px;
-    margin: 0;
+    width: 100%;
+    max-width: 250px;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 15px;
     margin-bottom: 100px;
   }
   .projectWrap {
-    width: 35.62%;
+    width: 42.19%;
+    margin-top: 20px;
+    padding-bottom: 50px;
   }
   .projectDescription {
     height: auto;
@@ -260,9 +286,6 @@
 }
 /* 1024px 노트북 시작 */
 @media screen and (min-width: 1024px) {
-  .projectSection {
-    margin-top: 150px;
-  }
   .container {
     width: 88.28%;
   }
@@ -291,22 +314,33 @@
   .projectBtnContainer button {
     width: 22%;
     height: 100%;
-    background: #a67c52;
+    background: #666666;
     border-radius: 50px;
     font-size: 2rem;
     line-height: 60px;
     color: #fff;
   }
   .projectBtnContainer button:hover {
-    background-color: #7e583a;
+    background-color: #333333;
   }
   .projectBox {
     margin-top: 100px;
   }
+  .deviceImg {
+    width: 580px;
+    max-width: none;
+    height: 500px;
+    background: url("/portfolio/portfolioimage/Device/laptop.webp") no-repeat
+      center/contain;
+    padding-top: 78px;
+  }
   .projectImg {
-    width: 57.52%;
-    max-width: 520px;
-    height: 565px;
+    width: 80%;
+    max-width: 560px;
+    height: 310px;
+    max-height: 500px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   .projectWrap {
     width: 40.38%;
@@ -326,9 +360,6 @@
 }
 /* 1700px pc 시작 */
 @media screen and (min-width: 1700px) {
-  .projectSection {
-    margin-top: 200px;
-  }
   .container {
     width: 1600px;
   }
@@ -354,32 +385,30 @@
     display: flex;
     justify-content: space-between;
   }
-  .projectBtnContainer a {
-    width: 22%;
-    height: 100%;
-    background: #a67c52;
-    border-radius: 50px;
-    font-size: 2rem;
-    line-height: 60px;
-    color: #fff;
-  }
-  .projectBtnContainer a:hover {
-    background-color: #7e583a;
-  }
+
   .scrollBox {
-    width: 40.94%;
-    margin-left: 115px;
+    width: 1600px;
+    margin: 0 auto;
   }
 
   .projectBox {
     margin-top: 50px;
   }
   .projectImg {
-    width: 57.81%;
-    max-width: 925px;
+    width: 100%;
+    height: 350px;
+    max-width: 640px;
+  }
+  .deviceImg {
+    width: 58%;
+    height: 500px;
+    background: url("/portfolio/portfolioimage/Device/desktop.webp") no-repeat
+      center/contain;
+    padding-top: 10px;
   }
   .projectWrap {
     width: 32.5%;
+    margin-top: 0;
   }
   .projectTitle {
     height: auto;

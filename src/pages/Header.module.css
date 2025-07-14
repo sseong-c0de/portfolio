@@ -2,10 +2,10 @@
 .container {
   width: 100%;
   height: 100px;
-  background: #ead6be;
+  background: #000000;
   position: fixed;
-  border-bottom: solid #111 1px;
   z-index: 10;
+  border-bottom: 1px solid #fff;
 }
 .headerInner {
   width: 83.33%;
@@ -25,6 +25,9 @@
   font-size: 2.6rem;
   font-family: "Pretendard", sans-serif;
 }
+.h1Wrap h1 a {
+  color: #ffffff;
+}
 .burger {
   display: flex;
   flex-direction: column;
@@ -34,15 +37,20 @@
   cursor: pointer;
   margin-left: auto;
 }
+
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #7e583a;
+  background-color: #ffffff;
 }
+
 .close {
   font-size: 3rem;
-  color: #7e583a;
+  color: #ffffff;
   font-weight: bold;
+}
+.close:hover {
+  color: #666666;
 }
 .gnbWrap {
   position: absolute;
@@ -50,7 +58,7 @@
   left: 0;
   width: 100vw;
   font-size: 2rem;
-  background-color: burlywood;
+  background-color: #333333;
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -69,8 +77,13 @@
 .gnb li {
   padding: 30px 30px 0 0;
 }
+.gnb li a {
+  display: block;
+  width: 100%;
+  color: #ffffff;
+}
 .gnb li a:hover {
-  color: #fff;
+  color: #666666;
 }
 .gnb li:last-child {
   padding-bottom: 30px;
@@ -115,7 +128,7 @@
     margin: 0 auto;
   }
   .center {
-    width: 27%;
+    width: 40%;
     margin: 0;
     display: block;
   }
@@ -139,9 +152,11 @@
     line-height: 99px;
   }
   .gnb li {
+    display: inline;
     padding: 0;
     font-size: 2rem;
   }
+
   .gnb li:last-child {
     padding-bottom: 0px;
   }
@@ -158,7 +173,7 @@
     margin: 0 auto;
   }
   .center {
-    width: 260px;
+    width: 50%;
     height: 100%;
   }
 
