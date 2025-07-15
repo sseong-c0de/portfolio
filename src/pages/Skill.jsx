@@ -3,7 +3,7 @@ import { skillLeftData, skillRightData } from "../Data/SkillData";
 
 function Skill() {
   return (
-    <section className={styles.skillSection}>
+    <section className={styles.skillSection} id="skillSection">
       <div className={styles.title}>
         <h2>02 Skill</h2>
       </div>

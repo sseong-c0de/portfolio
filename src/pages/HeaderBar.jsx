@@ -41,6 +41,9 @@ function HeaderBar() {
                   <a href="#profileSection">Profile</a>
                 </li>
                 <li onClick={setClose}>
+                  <a href="#skillSection">Skill</a>
+                </li>
+                <li onClick={setClose}>
                   <a href="#projectSection">Project</a>
                 </li>
                 <li onClick={setClose}>

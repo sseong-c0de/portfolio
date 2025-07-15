@@ -1,37 +1,51 @@
 @charset "utf-8";
-.container {
-  position: fixed;
-  left: 0;
-  top: 0;
+.loadingSection {
   width: 100vw;
   height: 100vh;
-  z-index: 999999;
-  background: #ead6be;
+  color: #fff;
+  background: #fff;
 }
-.textBox {
-  width: 100%;
-  font-size: 3.2rem;
-  padding-top: 400px;
-  line-height: 1.25;
-  text-align: center;
+.loadingSection::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000;
+  animation: loadingAni 3s ease-in-out;
+  z-index: 1;
 }
-.pBox {
-  width: 70%;
-  height: 100%;
-  margin: 0 auto;
-}
-@media screen and (min-width: 768px) {
-  .textBox {
-    font-size: 4rem;
+@keyframes loadingAni {
+  to {
+    width: 300vw;
+    height: 300vw;
   }
 }
-@media screen and (min-width: 1024px) {
-  .textBox {
-    font-size: 4.8rem;
+.pBox {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 4.8rem;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.3;
+  position: absolute;
+  z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .pBox {
+    width: 100%;
+    font-size: 9.4rem;
   }
 }
 @media screen and (min-width: 1700px) {
-  .textBox {
-    font-size: 6rem;
+  .pBox {
+    font-size: 16rem;
   }
 }

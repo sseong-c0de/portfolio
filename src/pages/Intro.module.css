@@ -26,11 +26,14 @@
 /* 768px 태블릿시작 */
 @media screen and (min-width: 768px) {
   .container {
-    height: 1080px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .textBox {
     width: 100%;
-    padding-top: 436px;
+    padding-top: 0px;
   }
 
   .textBox p {
@@ -44,28 +47,21 @@
 }
 /* 노트북시작 */
 @media screen and (min-width: 1024px) {
-  .container {
-    height: 1080px;
-  }
   .textBox {
     width: 100%;
-    padding-top: 336px;
+
     perspective: 1000px;
   }
   .moveBox {
-    padding: 100px 50px 100px 50px;
+    padding: 100px;
     transform-style: preserve-3d;
     transition: all 0.3s;
   }
 }
 /* PC시작 */
 @media screen and (min-width: 1700px) {
-  .container {
-    height: 1080px;
-  }
   .textBox {
     height: auto;
-    padding-top: 304px;
   }
 
   .textBox p {

@@ -65,7 +65,7 @@
   transition: all 0.4s ease-in-out;
 }
 .gnbWrap.show {
-  max-height: 230px;
+  max-height: 280px;
   opacity: 1;
 }
 .gnb {
