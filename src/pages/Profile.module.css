@@ -21,7 +21,7 @@
   font-family: "Pretendard";
   font-weight: 600;
 }
-.typing {
+/* .typing {
   display: inline-block;
   width: 0;
   overflow: hidden;
@@ -44,7 +44,7 @@
   50% {
     border-color: transparent;
   }
-}
+} */
 .profileLeft,
 .profileRight {
   width: 100%;
