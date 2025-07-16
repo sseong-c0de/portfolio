@@ -61,6 +61,7 @@ function Project() {
                     fade ? styles.fadeOut : ""
                   }`}
                   src={selectProject.image[imgSize]}
+                  alt="프로젝트 이미지"
                 />
               </div>
             </div>
