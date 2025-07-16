@@ -19,7 +19,7 @@
 }
 .title h2 {
   font-size: 4.6rem;
-  font-family: "Pretendard";
+  font-weight: 600;
 }
 .projectBtn {
   width: 83.33%;
@@ -94,7 +94,6 @@
 .projectTitle h3 {
   font-size: 4rem;
   padding: 10px 0 0 10px;
-  font-family: "Pretendard";
   font-weight: 600;
 }
 .projectTitle p {
@@ -167,6 +166,7 @@
   border-radius: 50px;
   font-size: 1.8rem;
   font-weight: 500;
+  font-family: "Montserrat", "Pretendard";
 }
 .dropDownMenu {
   width: 100%;
@@ -319,6 +319,7 @@
     font-size: 2rem;
     line-height: 60px;
     color: #fff;
+    font-family: "Montserrat", "Pretendard";
   }
   .projectBtnContainer button:hover {
     background-color: #333333;

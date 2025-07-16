@@ -14,6 +14,7 @@
 .title h2 {
   font-size: 4.6rem;
   text-align: center;
+  font-weight: 600;
 }
 .container {
   width: 83.33%;
@@ -44,10 +45,12 @@
   font-size: 2.6rem;
   padding-left: 20px;
   line-height: 3.5;
+  font-weight: 500;
 }
 .iconInfo {
   padding-top: 20px;
   font-size: 1.8rem;
+  font-weight: 400;
 }
 .Icontitle img {
   width: 75px;
