@@ -37,6 +37,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 #profileSection {
   scroll-margin-top: 100px;
 }
@@ -46,14 +47,34 @@ html {
 #projectSection {
   scroll-margin-top: 100px;
 }
+#contactSection {
+  scroll-margin-top: 100px;
+}
+@media screen and (min-width: 768px) {
+  #profileSection {
+    scroll-margin-top: 0px;
+  }
+  #projectSection {
+    scroll-margin-top: 100px;
+  }
+}
 @media screen and (min-width: 1024px) {
   #projectSection {
-    scroll-margin-top: 200px;
+    scroll-margin-top: 100px;
+  }
+  #profileSection {
+    scroll-margin-top: 0;
   }
 }
 @media screen and (min-width: 1700px) {
+  #profileSection {
+    scroll-margin-top: -50px;
+  }
+  #skillSection {
+    scroll-margin-top: 100px;
+  }
   #projectSection {
-    scroll-margin-top: 250px;
+    scroll-margin-top: 100px;
   }
 }
 

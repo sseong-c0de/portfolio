@@ -8,6 +8,9 @@
   height: 600px;
   width: 100%;
 }
+.container::-webkit-scrollbar {
+  display: none;
+}
 .textBox {
   width: 100%;
   padding-top: 242px;

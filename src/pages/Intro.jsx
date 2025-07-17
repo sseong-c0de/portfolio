@@ -4,7 +4,7 @@ function Intro() {
   const boxRef = useRef(null);
 
   const handleEnter = () => {
-    boxRef.current.style.transtion = "all 0.3s";
+    boxRef.current.style.transition = "all 0.3s";
     boxRef.current.style.transform = "scale(1.05) rotateX(0deg) rotateY(0deg)";
   };
   const handdleMove = (e) => {
@@ -12,8 +12,8 @@ function Intro() {
     const centerY = boxRef.current.clientHeight / 2;
     const offsetX = e.nativeEvent.offsetX - centerX;
     const offsetY = e.nativeEvent.offsetY - centerY;
-    const rotateX = -offsetY / 8;
-    const rotateY = offsetX / 8;
+    const rotateX = parseFloat((-offsetY / 10).toFixed(1));
+    const rotateY = parseFloat((offsetX / 10).toFixed(1));
     boxRef.current.style.transform = `scale(1.05 )rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
   };
   const handdleOut = () => {
