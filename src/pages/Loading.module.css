@@ -8,6 +8,7 @@
 .loadingSection::-webkit-scrollbar {
   display: none;
 }
+
 .loadingSection::after {
   content: "";
   width: 0;
