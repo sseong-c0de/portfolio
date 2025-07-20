@@ -49,18 +49,17 @@
 }
 /* 노트북시작 */
 @media screen and (min-width: 1024px) {
-  .introSection::-webkit-scrollbar {
-    display: none;
-  }
   .textBox {
     width: 100%;
-
     perspective: 1000px;
   }
   .moveBox {
     padding: 100px;
     transform-style: preserve-3d;
     transition: all 0.3s;
+  }
+  .container {
+    overflow-x: hidden;
   }
 }
 /* PC시작 */
