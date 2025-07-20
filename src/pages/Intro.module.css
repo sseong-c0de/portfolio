@@ -49,6 +49,9 @@
 }
 /* 노트북시작 */
 @media screen and (min-width: 1024px) {
+  .introSection::-webkit-scrollbar {
+    display: none;
+  }
   .textBox {
     width: 100%;
 
