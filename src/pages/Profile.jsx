@@ -8,7 +8,11 @@ function Profile() {
       <div className={styles.container}>
         <div className={styles.profileLeft}>
           <div className={styles.profilePicture}>
-            <div className={styles.pictureBox}>사진 박스</div>
+            <img
+              src="/portfolio/portfolioimage/me.jpg"
+              alt="profileImg"
+              className={styles.pictureBox}
+            ></img>
           </div>
         </div>
         <div className={styles.profileRight}>
